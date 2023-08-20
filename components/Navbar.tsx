@@ -15,16 +15,16 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full absolute top-0 z-10 bg-blue-100 shadow-md bg-opacity-30 backdrop-blur-xl text-slate-800 px-20 h-fit  py-5 flex flex-row justify-between items-center ">
-      <h1 className="font-extrabold text-3xl text-center flex items-center">
+    <div className="w-screen px-5 z-10 bg-blue-100 shadow-md bg-opacity-30 backdrop-blur-xl text-slate-800 md:px-20 h-fit  py-5 flex flex-row justify-between items-center ">
+      <h1 className="font-extrabold md:text-3xl text-center flex items-center">
         <MdCastForEducation
-          className="inline mr-3 my-auto"
+          className="hidden md:flex inline mr-3 my-auto"
           size={45}
           color="#60a5fa"
         />
         Smart-<span className="text-blue-400">Ed</span>-Forge
       </h1>
-      <div className="flex flex-row gap-12 items-center justify-between">
+      <div className="hidden md:flex flex-row gap-12 items-center justify-between">
         {navRoutes.map(({ name, path }) => (
           <p
             className={`${
@@ -35,16 +35,16 @@ const Navbar = () => {
           </p>
         ))}
       </div>
-      <div className="flex w-80 flex-row gap-8 items-center">
+      <div className="flex md:w-80 flex-row gap-3 md:gap-8 items-center">
         <button
           onClick={() => router.push("/sign-up")}
-          className="w-1/2 hover:-translate-y-1 transition-all ease-in-out  bg-blue-400 font-semibold text-white rounded-[80px] text-xl px-7 py-3"
+          className="w-1/2 hover:-translate-y-1 transition-all ease-in-out px-4 py-2  bg-blue-400 font-semibold text-white rounded-[80px] md:text-xl md:px-7 md:py-3"
         >
           Login
         </button>
         <button
           onClick={() => router.push("/authentication")}
-          className="w-1/2 hover:-translate-y-1 transition-all ease-in-out  border-blue-400 border-2 font-semibold text-blue-400 rounded-[80px] text-xl px-7 py-3"
+          className="w-1/2 hover:-translate-y-1 transition-all ease-in-out px-4 py-2  border-blue-400 border-2 font-semibold text-blue-400 rounded-[80px] md:text-xl md:px-7 md:py-3"
         >
           Signup
         </button>

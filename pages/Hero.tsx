@@ -15,21 +15,21 @@ const Hero = () => {
     "20+ Features",
   ];
   return (
-    <div className="min-h-full  pb-20 max-h-fit w-full">
-      <div className="h-screen w-full gap-20  flex items-center flex-row justify-between px-14">
-        <div className="w-[60%] px-20">
+    <div className="min-h-full  md:pb-20 max-h-fit w-screen">
+      <div className="h-screen pt-14 md:pt-0 w-screen gap-20 px-5  flex items-center flex-col md:flex-row justify-start md:justify-between md:px-14">
+        <div className="w-full  md:w-[60%] md:px-20 md:relative md:bottom-20">
           <p className="text-blue-400 text-xl">A new age learning platform.</p>
-          <h1 className="text-8xl py-5 font-semibold">Smart-Ed-Forge</h1>
-          <p className="text-2xl w-full pr-10 text-gray-600">
+          <h1 className="text-3xl md:text-8xl py-5 font-semibold">Smart-Ed-Forge</h1>
+          <p className="md:text-2xl w-full pr-10 text-gray-600">
             Elevating Education, Empowering Futures. Your All-in-One Platform
             for Seamless Online Institution Management.
           </p>
-          <button className="bg-blue-400 mt-10 font-semibold px-10 py-6 text-2xl rounded-3xl text-white">
+          <button className="bg-blue-400 mt-10 font-semibold px-4 py-3 md:px-10 md:py-6 md:text-2xl rounded-3xl text-white">
             schedule a demo
           </button>
         </div>
         <motion.div
-          className="w-1/2 relative bottom-16 h-[90%]"
+          className="md:w-1/2 w-screen relative bottom-16 h-[90%]"
           animate={{
             y: [-15, 10, -10],
             transition: {
@@ -47,11 +47,11 @@ const Hero = () => {
           />
         </motion.div>
       </div>
-      <div className="w-full flex flex-row items-center justify-evenly h-fit py-14 bg-blue-400 px-10 text-white">
+      <div className="w-full flex flex-row items-center justify-evenly h-fit py-14 bg-blue-400 px-2 md:px-10 text-white">
         {features.map((feature) => (
-          <p className=" text-4xl font-bold">
+          <p className=" md:text-4xl font-bold">
             {feature.split(" ")[0]}{" "}
-            <span className="block text-xl text-gray-100">
+            <span className="block md:text-xl text-gray-100">
               {feature.split(" ")[1]}
             </span>
           </p>
