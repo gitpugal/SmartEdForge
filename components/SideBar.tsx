@@ -15,7 +15,7 @@ const SideBar = () => {
   ];
 
   return (
-    <div className="w-fit absolute left-0 top-0 z-10 bg-blue-100 shadow-md bg-opacity-30 backdrop-blur-xl text-slate-800 px-20 h-screen  flex flex-col justify-evenly items-center ">
+    <div className="w-fit  absolute left-0 top-0 z-10 bg-blue-100 shadow-md bg-opacity-30 backdrop-blur-xl text-slate-800 px-20 h-screen  hidden md:flex flex-col justify-evenly items-center ">
       <h1 className="font-extrabold text-3xl text-center flex items-center">
         <MdCastForEducation
           className="inline mr-3 my-auto"
